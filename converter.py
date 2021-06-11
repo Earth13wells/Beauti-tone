@@ -7,7 +7,6 @@
 |This software has no ties to HomeHardware or Beauti-tone brands|
 |            any perceived relation is not intended.            |
 --------------------------------------------------------------"""
-
 try:
     import Tkinter as tk
 except ModuleNotFoundError:
@@ -28,10 +27,12 @@ def convert():
     for z in range(0, 7):
         New_Ounces[z].config(text=Old_Ounces[z].get())
         New_Shots[z].config(text=Old_Shots[z].get())
+
         if(Old_Quarters[z].get() == ""):
             Old_Quarters[z].insert(0, "0")
         if(Old_Halfs[z].get() == ""):
             Old_Halfs[z].insert(0, "0")
+
         try:
             Sixteenths = (int(Old_Quarters[z].get())*4 + int(Old_Halfs[z].get())*8)
             if(Sixteenths >= 17):
