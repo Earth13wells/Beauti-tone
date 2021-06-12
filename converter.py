@@ -21,7 +21,7 @@ tk.Label(first, text="Shots:").grid(row=0, column=1)
 tk.Label(first, text="1/2 Shots:").grid(row=0, column=2)
 tk.Label(first, text="1/4 Shots:").grid(row=0, column=3)
 
-
+#
 # Conversion function
 def convert():
     for z in range(0, 7):
@@ -36,7 +36,7 @@ def convert():
         try:
             Sixteenths = (int(Old_Quarters[z].get())*4 + int(Old_Halfs[z].get())*8)
             if(Sixteenths >= 17):
-                tk.Label(first, text="TOO MANU FRACTIONAL SHOTS").grid(row=8, column=4)
+                tk.Label(first, text="TOO MANY FRACTIONAL SHOTS").grid(row=8, column=4)
             New_Sixteenths[z].config(text=Sixteenths)
         except ValueError:
             tk.Label(first, text="INVALID INPUT").grid(row=8, column=4)
