@@ -14,6 +14,7 @@ except ModuleNotFoundError:
 
 # Defining the main window
 first = tk.Tk()
+first.title('Formula Converter')
 
 # Old lables headers
 tk.Label(first, text="Ounces:").grid(row=0, column=0)
