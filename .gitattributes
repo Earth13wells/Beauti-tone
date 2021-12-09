@@ -1,3 +1,5 @@
 *.html linguist-detectable=false
 *.tex linguist-detectable=false
 *.dll linguist-detectable=false
+*.toc linguist-detectable=false
+*.tok linguist-detectable=false
